@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Atishay's Portfolio</h1>
+    {% for project in projects %}
+    
+    <img src="{{project.image.url}}">
+
+    {% endfor %}
+</body>
+</html>
