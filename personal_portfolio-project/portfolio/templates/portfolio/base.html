@@ -21,10 +21,10 @@
 
 <body>
 
-  <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+  <nav id="topNav" class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static 'portfolio/lion.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt="Atishay's's Logo">
+        <img src="{% static 'portfolio/lion.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt="Atishay's Logo">
         <span>Atishay Jain</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,19 +44,23 @@
           <li class="nav-item">
             <a class="nav-link" href="https://leetcode.com/atishay_jain07" target="_blank">LeetCode</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  
   <div class="container">
     {% block content %}{% endblock %}
   </div>
 
   <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
