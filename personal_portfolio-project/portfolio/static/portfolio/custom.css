@@ -1,30 +1,53 @@
+/* General navbar styles */
 .navbar-nav .nav-link {
-    color: rgba(0, 0, 0, 1) !important;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: rgba(0, 0, 0, 0.5) !important;
-  }
-  
-  body {
-    font-family: 'Lato', sans-serif;
-  }
-  
+  color: rgba(0, 0, 0, 1) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Body font settings */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Blog title styling */
+#blogtitle {
+  font-size: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
   #blogtitle {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  /* Ensure navbar items are displayed properly on mobile */
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   
-  @media (max-width: 767px) {
-    #blogtitle {
-      font-size: 2rem;
-    }
+  .navbar-nav .nav-link {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem; /* Adjust as needed */
   }
   
-  @media (min-width: 992px) {
-    #hometext {
-      font-size: 4rem;
-    }
-    #blogdetailtitle {
-      font-size: 5rem;
-    }
+  .navbar-toggler {
+    border: none; /* Optional: remove border around the toggler */
   }
+}
+
+@media (min-width: 992px) {
+  #hometext {
+    font-size: 4rem;
+  }
+
+  #blogdetailtitle {
+    font-size: 5rem;
+  }
+}
