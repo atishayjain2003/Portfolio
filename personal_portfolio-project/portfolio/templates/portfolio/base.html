@@ -25,27 +25,41 @@
 
   <nav id="topNav" class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
+      <!-- Brand with logo -->
       <a class="navbar-brand" href="{% url 'home' %}">
         <img src="{% static 'portfolio/lion.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt="Atishay's Logo">
         <span>Atishay Jain</span>
       </a>
+
+      <!-- Toggler for mobile view -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
+      <!-- Collapsible section for navbar links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
+          <!-- Resume link -->
           <li class="nav-item">
             <a class="nav-link" href="{% static 'portfolio/ATISHAY JAIN RESUME .pdf' %}" target="_blank">Resume</a>
           </li>
+          
+          <!-- GitHub link -->
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/atishayjain2003" target="_blank">Github</a>
+            <a class="nav-link" href="https://github.com/atishayjain2003" target="_blank">GitHub</a>
           </li>
+          
+          <!-- LinkedIn link -->
           <li class="nav-item">
             <a class="nav-link" href="https://www.linkedin.com/in/atishayjain743/" target="_blank">LinkedIn</a>
           </li>
+          
+          <!-- LeetCode link -->
           <li class="nav-item">
             <a class="nav-link" href="https://leetcode.com/atishay_jain07" target="_blank">LeetCode</a>
           </li>
+          
+          <!-- Blog link -->
           <li class="nav-item">
             <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
           </li>
