@@ -34,11 +34,17 @@ body {
   .navbar-nav .nav-link {
     text-align: center;
     padding: 10px;
-    font-size: 1.2rem; /* Adjust as needed */
+    font-size: 1.2rem;
+  }
+
+  /* Ensure button is responsive */
+  .navbar-nav .btn-primary {
+    width: 100%;
+    margin: 10px 0;
   }
   
   .navbar-toggler {
-    border: none; /* Optional: remove border around the toggler */
+    border: none;
   }
 }
 
